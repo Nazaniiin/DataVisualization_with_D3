@@ -1,14 +1,12 @@
 # Explanatory Data Visualization Using D3
 
 ## Summary
------------
 
 In this project I analyze a dataset on performance of baseball players based on their `Height`, `Weight` and `Handedness`. I observe how these factors can affect the number of [Home Runs(HR)](https://en.wikipedia.org/wiki/Home_run) and [Batting Average(BA)](https://en.wikipedia.org/wiki/Batting_average) a player can have. 
 
 I create two plots, one showing the relationship between `Height`, `Batting Average(BA)`, and `Home Runs(HR)`; another one showing the relationship between `Weight`, `Home Runs(HR)`, and `Handedness`. 
 
 ## Design 
------------
 
 To create a useful visualization that can help my audience understand the relationship, I tried to use simple elements and colors to avoid confusion. An informative visualization can be simple and at the same time transfer the message I intend to share with my audience quickly. 
 
@@ -31,12 +29,11 @@ Based on this plot, I saw a positive correlation between weight of players and t
 - There also seems to be a trend for higher number of home runs(HR) among left-handed players
 
 ## Feedback 
---------------
 
 include all feedback you received from others on your visualization from the first sketch to the final visualization
 
 ## Resources 
-----------------
+
 - https://bost.ocks.org/mike/selection/
 - https://blog.decayingcode.com/post/Easy-Charting-in-JavaScript-with-d3js-and-Dimple-from-CSV-data/
 - https://gist.github.com/rgilredondo/4580cf3269e5461efb866d47a6e94c4c
