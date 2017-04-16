@@ -45,7 +45,7 @@ Based on this plot, I saw a positive correlation between weight of players and t
 
 ## Feedback 
 
-include all feedback you received from others on your visualization from the first sketch to the final visualization
+Include all feedback you received from others on your visualization from the first sketch to the final visualization
 
 ## Resources 
 
