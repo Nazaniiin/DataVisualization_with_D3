@@ -32,6 +32,12 @@ Based on this plot, I saw a positive correlation between weight of players and t
 
 include all feedback you received from others on your visualization from the first sketch to the final visualization
 
+## Information on the Dataset
+
+This dataset contains 1,157 baseball players including their handedness (right or left handed), height (in inches), weight (in pounds), batting average, and home runs.
+
+I use this dataset to create visualizations that show differences among the performance of the baseball players.
+
 ## Resources 
 
 - https://bost.ocks.org/mike/selection/
