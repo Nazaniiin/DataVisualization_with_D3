@@ -69,6 +69,7 @@
 	                d.handedness = handDictionay[d.handedness]
 	            });
 
+	            // Draw the two visualizations
 	            height_avg_hr(data);
 	            handedness_HR(data);
 
@@ -76,6 +77,9 @@
 
 	        // Plotting Batting Average(BA) based on players grouped by their Height
 	        // For each Height group, plotting the average Home Runs(HR) as well
+	        // Using a line plot to show the negative correlation between height and
+	        // Batting Average(BA) scores. Using bubble chart to show the number of 
+	        // Home Runs(HR) scored by players based on their heights
 	        function height_avg_hr(data) {
 
 	        	var svg = d3.select("body").append("svg")
@@ -139,10 +143,11 @@
 		        mychart.draw();
 	        };
 	        
-	        // Plotting handedness category agianst Home Runs(HR) to observe
-	        // if there is any correlation between right-handed, left-handed
-	        // and both-handed players and the number of Home Runs(HR) they 
-	        // have scored in their games    	
+	        // Plotting weight agianst Home Runs(HR) to observe if there is
+	        // any correlation. Also, faceting the players based on their
+	        // handedness. Used a scatter plot to show number of Home Runs(HR)
+	        // based on weight. Used colors to differenciate the players based 
+	        // on their handedness: Right-handed, Left-handed and Both-handed 	
 	        function handedness_HR(data) {
 
 	        	var svg = d3.select("body").append("svg")
@@ -179,8 +184,6 @@
 
 		        // The 2nd element of the plot
 		        var y = mychart.addMeasureAxis("y","HR");
-		        //x.overrideMin = 0;
-		       	//x.overrideMax = 600;
 		       	y.title = "Home Runs(HR) Based on Player's Weight";
 		        y.fontSize = "13px";
 
