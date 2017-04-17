@@ -8,10 +8,6 @@ In this project I analyze the data for performance of baseball players based on 
 
 I create two plots, one showing the relationship between `Height`, `Batting Average(BA)`, and `Home Runs(HR)`; another one showing the relationship between `Weight`, `Home Runs(HR)`, and `Handedness`. 
 
-### Use the below Gist to see the visualization without having to run the code
-
-[Performance of Baseball Players](http://bl.ocks.org/Nazaniiin/372037e83c08d449e18b178d913ab27a)
-
 ## Design 
 
 To create a useful visualization that can help my audience understand the relationship, I tried to use simple elements and colors to avoid confusion. An informative visualization can be simple and at the same time transfer the message I intend to share with my audience quickly. 
