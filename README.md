@@ -55,7 +55,7 @@ I decided to go with a lighter color pallete, as well as remembering to use the 
 **After applying feedback 2 in index3.html:**
 I decided to include a short description for my visualizations explaining my interpretation from the data.
 
-**After applying feedback 2 in index_final.html:**
+**After applying feedback 3 in index_final.html:**
 While coming up with this visualization, I myself suspected that I might have too much information cramped in one plot, which might lead to confusion for a someone trying to understand my visualization, and I was correct. 
 
 To make my second plot simpler, more clear, and easier to understand, I decided to remove the batting average(BA) variable from the plot and only group the data by `handedness`. The reasoning for that was because I had already drawn a plot showing the relation of height and batting average, and I felt it was redundant to include this variable against weight especially when it was not conveying any strong relationship.
@@ -68,7 +68,7 @@ I shared the initial visualization with a Data Scientist in person and his first
 I also shared my visualization with Udacity and received a couple more feedback (feedbacks 2 and 3 below). The feedbacks were constructive and I decided to apply them to my visualizations.
 
 ### Feedback 2
-The project rubric also requires a short explanation to be included. This is also helpful for readers to understand your visualization.
+The project rubric also requires a short explanation to be included. This is also helpful for readers to understand your visualization. This feedback was also given to me by another person I showed the visualization to. 
 
 ### Feedback 3
 The second graph takes a bit of time to understand due to the many things going on, faceting using shapes instead of colors might help? It's also not clear what the size of the circles represent, so this may lead to confusion.
