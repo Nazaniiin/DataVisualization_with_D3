@@ -1,7 +1,7 @@
 This directory contains 3 html files:
 - **index1.html**
 
-The data in this file contains the code before I ask for any feedback regarding my visualizations.
+Initial sketch: The data in this file contains the code before I ask for any feedback regarding my visualizations.
 
 - **index2.html**
 
