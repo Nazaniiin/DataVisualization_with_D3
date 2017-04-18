@@ -32,27 +32,24 @@
 	            // Chart heading added to visualisation
 	            var title = d3.select("body")
 	            			  .append("h1")
-	            			  .text("Performance of Players in Baseball");
+	            			  .text("What Matters in Baseball");
 
 	            d3.select("body")
             	.append("div")
             	.style('margin', '4px')
             	.style('position', 'relative')
-            	.text("In this visualisation I present an explanatory analysis "
-                  + "on the performance of baseball players based on their height, "
-                  + "weight, and handedness. The performance attributes I observe "
-                  + "in this dataset are number of Home Runs(HR) and Batting Average(BA)."
-                  + "In the first visualisation I plot height of the players against "
-                  + "how well they could score on Batting Average(BA) and Home Runs(HR).  "
-                  + "It can be conveyed that generally players who are shorter, tend to score "
-                  + "higher on Batting Average(BA). The Home Runs(HR) score seems to be consistent "
-                  + "among players who are between 70-to-75-inch tall, with a significant rise for "
-                  + "players who are 67-inch tall. "
-                  + "In the second visualisation I plot weight of the players against the number "
-                  + "of their Home Runs(HR) categoried by their handedness. Based on the plot, "
-                  + "players with higher weight tend to score more in Home Runs(HR). Among them "
-                  + "the left-handed players seems to have more number of higher scores for "
-                  + "Home Runs(HR). Right-handed players come second. ");
+            	.text("Here I present a visual analysis on parameters that affect performance "
+            	  + "of baseball players. The data I work with contains 1,157 baseball players including "
+            	  + "their handedness (right or left handed), height (in inches), weight (in pounds), "
+            	  + "batting average (BA), and home runs (HR). Based on the results, "
+                  + "the first plot conveys that players who are shorter, tend to score higher "
+                  + "on BA. The HR score seems to be consistent among players who are "
+                  + "between 70-to-75-inch tall, with a significant rise for players who "
+                  + "are 67-inch tall. "
+				  + "Based on the second plot, players with 168 pounds to 230 pounds have scored 80 "
+				  + "or higher HR. Among them the left-handed players seems to have more number of "
+				  + "higher scores for HR. Right-handed players come second. A few of the heaviest "
+				  + "players do not score any HR; probably because they are fielders.");
 
 	            // Format the data:
 	            var handDictionay = {};
@@ -128,13 +125,13 @@
        			// Aggregationg data based on Height
        			mychart.addSeries("Home Runs", dimple.plot.bubble)
             		   .aggregate = dimple.aggregateMethod.avg;
-            	mychart.assignColor("Home Runs", "#FECE66");	   
+            	mychart.assignColor("Home Runs", "#f6a25a");	   
           		
           		// Aggregationg data based on average Home Runs(HR) 
           		var line = mychart.addSeries("Batting average", dimple.plot.line);
             	line.aggregate = dimple.aggregateMethod.avg;
             	line.lineMarkers = true;
-          		mychart.assignColor("Batting average", "#5D8EE9");
+          		mychart.assignColor("Batting average", "#254654");
 
           		// Show a legend
     			mychart.addLegend(400, 50, 400, 50, "right");
@@ -147,9 +144,8 @@
 	        // any correlation. Also, faceting the players based on their
 	        // handedness. Used a scatter plot to show number of Home Runs(HR)
 	        // based on weight. Used colors to differenciate the players based 
-	        // on their handedness: Right-handed, Left-handed and Both-handed 	
+	        // on their handedness: Right-handed, Left-handed and Both-handed 
 	        function handedness_HR(data) {
-
 	        	var svg = d3.select("body").append("svg")
 	            			.attr("width", width + (margin))
 	            			.attr("height", height + 20)
@@ -172,7 +168,6 @@
 	            */
 		        var mychart = new dimple.chart(svg,data);
 		        console.table(data);
-
 		        mychart.setBounds(60, 30, 710, 450)
 
 		        // The 1st element of the plot
@@ -190,13 +185,15 @@
     			// Aggregationg data based on Handedness
        			var series = mychart.addSeries(["weight","handedness"], dimple.plot.scatter);
             	series.aggregate = dimple.aggregateMethod.avg;
+            	mychart.assignColor("Right Handed", "#e96f4c", "#e96f4c",1);
+            	mychart.assignColor("Left Handed", "#219e8f","#219e8f",1);
+            	mychart.assignColor("Both Handed", "#eac563","#eac563",1);
 
           		// Show a legend
     			mychart.addLegend(380, 20, 400, 50, "right");
 
 		        // Draw the plot
 		        mychart.draw();
-
 	        };
 
 	        //Set up and read data from CSV file and draw chart
