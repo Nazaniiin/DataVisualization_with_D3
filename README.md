@@ -60,19 +60,6 @@ While coming up with this visualization, I myself suspected that I might have to
 
 To make my second plot simpler, more clear, and easier to understand, I decided to remove the batting average(BA) variable from the plot and only group the data by `handedness`. The reasoning for that was because I had already drawn a plot showing the relation of height and batting average, and I felt it was redundant to include this variable against weight especially when it was not conveying any strong relationship.
 
-## Feedback 
-
-### Feedback 1 
-I shared the initial visualization with a Data Scientist in person and his first feedback to me was to use lighter colors in my visualization. Although stronger colors can be useful, based on my data and explanatory analysis, he felt it would be nicer to see lighter colors in the visualization. He also mentioned that if I decide to have multiple plots for a set of data, it is a good idea to follow the same color pallete in them.
-
-I also shared my visualization with Udacity and received a couple more feedback (feedbacks 2 and 3 below). The feedbacks were constructive and I decided to apply them to my visualizations.
-
-### Feedback 2
-The project rubric also requires a short explanation to be included. This is also helpful for readers to understand your visualization. This feedback was also given to me by another person I showed the visualization to. 
-
-### Feedback 3
-The second graph takes a bit of time to understand due to the many things going on, faceting using shapes instead of colors might help? It's also not clear what the size of the circles represent, so this may lead to confusion.
-
 ## Resources 
 
 - https://bost.ocks.org/mike/selection/
